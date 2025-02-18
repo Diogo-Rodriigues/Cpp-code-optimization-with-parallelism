@@ -42,7 +42,7 @@ This code was developed as the base code for the project of **Parallel Computing
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Diogo-Rodriigues/Optimization-with-parallelism-of-3d-fluid-simulation-code.git
+    git clone https://github.com/Diogo-Rodriigues/Cpp-code-optimization-with-parallelism.git
     cd Optimization-with-parallelism-of-3d-fluid-simulation-code/3dfluid-main
     ```
 
