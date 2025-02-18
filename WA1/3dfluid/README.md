@@ -37,7 +37,7 @@
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/jgbarbosa/3dfluid.git
+    git clone https://github.com/Diogo-Rodriigues/Optimization-with-parallelism-of-3d-fluid-simulation-code.git
     cd 3dfluid
     ```
 
