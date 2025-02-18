@@ -1,8 +1,4 @@
-# Fluid Simulation with Event Manager
-
-This project simulates fluid dynamics using Jos Stam's stable fluid solver in 3D, incorporating dynamic events such as adding density sources and applying forces at specified timesteps. The events are generated using a Python script and read by the C++ simulation.
-
-This code was developed as the base code for the project of **Parallel Computing** at the **University of Minho**, 2024/2025.
+# Sequential optimizations
 
 ## Table of Contents
 
@@ -13,7 +9,6 @@ This code was developed as the base code for the project of **Parallel Computing
    - [Generating Event Data](#generating-event-data)
    - [Running the Fluid Simulation](#running-the-fluid-simulation)
 5. [Example](#example)
-6. [Credits](#credits)
 
 ## Project Structure
 
@@ -113,8 +108,6 @@ source 8 900
 ### Problems with the generator
 If you are experiencing problems with the generator there is a events.txt file as an example in the root folder of the project.
 
-Use the file and contact the teaching staff to get help.
-
 ### Running the Simulation
 
 Once `events.txt` is generated, you can run the fluid simulation using:
@@ -124,14 +117,3 @@ Once `events.txt` is generated, you can run the fluid simulation using:
 ```
 
 The simulation will dynamically apply the sources and forces defined in `events.txt`, simulate the fluid behavior, and print the total density after 1000 timesteps.
-
-## Credits
-
-This code was developed as the base code for the **Parallel Computing** project at the **University of Minho**, 2024/2025.
-
-Authors:
-- **João Luis Sobral**  
-- **João Barbosa**  
-- **Andre Pereira**  
-- **Rui Silva**  
-- **Miguel Braga**
