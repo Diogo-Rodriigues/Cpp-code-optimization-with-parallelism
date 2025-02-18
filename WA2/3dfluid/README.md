@@ -1,8 +1,4 @@
-# Fluid Simulation with Event Manager
-
-This project simulates fluid dynamics using Jos Stam's stable fluid solver in 3D, incorporating dynamic events such as adding density sources and applying forces at specified timesteps. The events are generated using a Python script and read by the C++ simulation.
-
-This code was developed as the base code for the project of **Parallel Computing** at the **University of Minho**, 2024/2025.
+# OpenMP (Multithreading optimizations)
 
 ## Table of Contents
 
@@ -13,7 +9,6 @@ This code was developed as the base code for the project of **Parallel Computing
    - [Generating Event Data](#generating-event-data)
    - [Running the Fluid Simulation](#running-the-fluid-simulation)
 5. [Example](#example)
-6. [Credits](#credits)
 
 ## Project Structure
 
@@ -37,22 +32,26 @@ This code was developed as the base code for the project of **Parallel Computing
 ### Libraries and Tools
 - Python
 - Standard C++ libraries for compilation (e.g., `g++` or `clang++`).
+- OpenMP library
 
 ## Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/jgbarbosa/3dfluid.git
-    cd 3dfluid
+    git clone https://github.com/Diogo-Rodriigues/Optimization-with-parallelism-of-3d-fluid-simulation-code.git
+    cd Optimization-with-parallelism-of-3d-fluid-simulation-code/WA2/3dfluid
     ```
 
 2. **Compile the C++ Simulation**:
-    Use the included `Makefile` to build the C++ simulation.
+    Use the included `Makefile` to build the sequential or parallel version with OpenMP of the C++ simulation .
     ```bash
-    make
+    make seq
+    ```
+    ```bash
+    make par
     ```
 
-    This will generate an executable named `fluid_sim`.
+    This will generate an executable named `fluid_sim` or `fluid_sim_seq`.
 
 ## Usage
 
@@ -74,9 +73,12 @@ The Python script `generate_events.py` generates a file (`events.txt`) that spec
 
 Once you've generated the `events.txt` file, you can run the fluid simulation, which will read the events and apply them over the course of the simulation.
 
-1. **Run the simulation**:
+1. **Run the sequential or parallel simulation**:
     ```bash
-    ./fluid_sim
+    make runseq
+    ```
+    ```bash
+    make runpar
     ```
 
     The simulation will read the `events.txt` file, apply the specified sources and forces at the correct timesteps, and calculate the fluid dynamics.
@@ -113,25 +115,15 @@ source 8 900
 ### Problems with the generator
 If you are experiencing problems with the generator there is a events.txt file as an example in the root folder of the project.
 
-Use the file and contact the teaching staff to get help.
-
 ### Running the Simulation
 
-Once `events.txt` is generated, you can run the fluid simulation using:
-
+Once `events.txt` is generated, you can run the sequential or parallel fluid simulation using:
+    
 ```bash
-./fluid_sim
+make runseq
+```
+```bash
+make runpar
 ```
 
 The simulation will dynamically apply the sources and forces defined in `events.txt`, simulate the fluid behavior, and print the total density after 1000 timesteps.
-
-## Credits
-
-This code was developed as the base code for the **Parallel Computing** project at the **University of Minho**, 2024/2025.
-
-Authors:
-- **João Luis Sobral**  
-- **João Barbosa**  
-- **Andre Pereira**  
-- **Rui Silva**  
-- **Miguel Braga**
