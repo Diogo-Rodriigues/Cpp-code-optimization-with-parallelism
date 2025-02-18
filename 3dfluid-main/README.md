@@ -42,8 +42,8 @@ This code was developed as the base code for the project of **Parallel Computing
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/jgbarbosa/3dfluid.git
-    cd 3dfluid
+    git clone https://github.com/Diogo-Rodriigues/Optimization-with-parallelism-of-3d-fluid-simulation-code.git
+    cd Optimization-with-parallelism-of-3d-fluid-simulation-code/3dfluid-main
     ```
 
 2. **Compile the C++ Simulation**:
@@ -112,8 +112,6 @@ source 8 900
 
 ### Problems with the generator
 If you are experiencing problems with the generator there is a events.txt file as an example in the root folder of the project.
-
-Use the file and contact the teaching staff to get help.
 
 ### Running the Simulation
 
