@@ -5,7 +5,7 @@ In this phase we started to improve the parallelism with multithreading and mult
 ## Estrutura
 
 ```plaintext
-/WA1
+/WA2
     ├── 3dfluid      #Code
     └── report.pdf   #Report
 ```
