@@ -38,7 +38,7 @@
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/Diogo-Rodriigues/Optimization-with-parallelism-of-3d-fluid-simulation-code.git
-    cd 3dfluid
+    cd Optimization-with-parallelism-of-3d-fluid-simulation-code/WA1/3dfluid
     ```
 
 2. **Compile the C++ Simulation**:
