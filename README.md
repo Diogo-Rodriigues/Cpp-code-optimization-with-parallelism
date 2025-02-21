@@ -1,4 +1,4 @@
-# ptimization with parallelism of 3d fluid simulation code
+# Optimization with parallelism of 3d fluid simulation code
 
 This project simulates fluid dynamics using Jos Stam's stable fluid solver in 3D, incorporating dynamic events such as adding density sources and applying forces at specified timesteps. The events are generated using a Python script and read by the C++ simulation. 
 
