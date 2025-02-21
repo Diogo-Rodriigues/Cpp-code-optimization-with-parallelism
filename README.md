@@ -13,7 +13,7 @@ In the Table presents the execution time measurements for the original, sequenti
 | OpenMP (WA2)            |   58.3 ± 0.2   |
 | CUDA (WA3)              |   17.4 ± 0.1   |
 
-**As we can see, we achieved a runtime improvement of 122 times faster than the original version!⚠️**
+**⚠️ As we can see, we achieved a runtime improvement of 122 times faster than the original version!⚠️**
 
 ## Phase 1 - Sequential optimizations
 
